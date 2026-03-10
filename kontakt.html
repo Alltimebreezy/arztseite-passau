@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Terminvereinbarung | Gemeinschaftspraxis Dr. Adjan & Dr. Göttl Passau</title>
+  <meta name="description" content="Kontaktieren Sie die Gemeinschaftspraxis Dr. med. Adjan und dr. med. Göttl in Passau. Termin vereinbaren für Kardiologie und Rheumatologie. Tel: 0851 51511.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">A&G</div>
+        <div class="brand-text">
+          <span class="brand-name">Dr. Adjan & Dr. Göttl</span>
+          <span class="brand-sub">Kardiologie & Rheumatologie</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Startseite</a>
+        <a href="kardiologie.html">Kardiologie</a>
+        <a href="rheumatologie.html">Rheumatologie</a>
+        <a href="team.html">Team</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="#termin" class="nav-cta">Termin vereinbaren</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <span class="label reveal">Kontakt & Termin</span>
+      <h1 class="reveal">Wir sind für <em>Sie da</em></h1>
+      <p class="reveal">Vereinbaren Sie Ihren Termin telefonisch, per E-Mail oder direkt über unser Kontaktformular. Privatpatienten erhalten täglich verfügbare Termine.</p>
+    </div>
+  </section>
+
+  <!-- Contact Split — Info + Photo -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-split reveal" style="min-height: auto; border: 1px solid var(--border);">
+        <div class="contact-info">
+          <span class="label">Kontaktdaten</span>
+          <h2 style="margin-top: 1rem;">So erreichen Sie uns</h2>
+          <p style="margin-top: 1rem;">Wir freuen uns auf Ihren Besuch in unserer Praxis und stehen Ihnen für alle Gesundheitsfragen bereit.</p>
+
+          <div class="contact-detail" style="margin-top: 2rem;">
+            <div class="detail-label">Telefon</div>
+            <a href="tel:085151511">0851 51511</a>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">E-Mail</div>
+            <a href="mailto:praxis@goettl-adjan.de">praxis@goettl-adjan.de</a>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">Adresse</div>
+            <p>Passau, Niederbayern</p>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">Privatsprechstunde</div>
+            <p>Täglich verfügbare Termine</p>
+          </div>
+        </div>
+
+        <div class="contact-photo-side">
+          <img src="images/contact.jpg" alt="Arzt-Patienten-Gespräch">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section id="termin" class="section section--cream">
+    <div class="container">
+      <div class="contact-split" style="min-height: auto;">
+        <div class="contact-info" style="background: var(--bg-cream);">
+          <span class="label">Terminvereinbarung</span>
+          <h2 style="margin-top: 1rem;">Vereinbaren Sie Ihren Termin</h2>
+          <p style="margin-top: 1rem;">Wählen Sie Ihre Versicherungsart und Ihren gewünschten Fachbereich. Wir melden uns schnellstmöglich bei Ihnen zurück.</p>
+
+          <div style="margin-top: 2rem; padding: 2rem; border: 1px solid var(--border); background: var(--white);">
+            <div class="detail-label" style="color: var(--accent);">Privatsprechstunde</div>
+            <p style="margin-top: 0.5rem; font-size: 0.95rem;">Für privat versicherte Patienten stehen jeden Tag Termine zur Verfügung. Erleben Sie individuelle Betreuung auf höchstem Niveau.</p>
+          </div>
+
+          <div class="contact-detail" style="margin-top: 2rem;">
+            <div class="detail-label">Oder rufen Sie direkt an</div>
+            <a href="tel:085151511" style="font-size: 1.2rem; font-family: 'Gilda Display', serif;">0851 51511</a>
+          </div>
+        </div>
+
+        <div class="form-section" style="background: var(--white);">
+          <h3>Termin anfragen</h3>
+          <p style="margin-bottom: 2rem; color: var(--text-body);">Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
+          <form class="klaas-form">
+            <div class="insurance-select">
+              <label class="insurance-option active">
+                <input type="radio" name="insurance" value="gesetzlich" checked>
+                Gesetzlich
+              </label>
+              <label class="insurance-option">
+                <input type="radio" name="insurance" value="privat">
+                Privat
+              </label>
+              <label class="insurance-option">
+                <input type="radio" name="insurance" value="selbstzahler">
+                Selbstzahler
+              </label>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse">
+            </div>
+            <div class="form-group">
+              <label for="fachbereich">Fachbereich</label>
+              <select id="fachbereich" name="fachbereich" required>
+                <option value="">Bitte wählen</option>
+                <option value="kardiologie">Kardiologie – Dr. med. Omar Adjan</option>
+                <option value="rheumatologie">Rheumatologie – dr. med. Jakob Göttl</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Anliegen</label>
+              <textarea id="message" name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen oder gewünschten Termin..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-arrow form-submit">Termin anfragen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Dr. Adjan & Dr. Göttl</h4>
+          <p>Ihre Gemeinschaftspraxis für Kardiologie und Rheumatologie in Passau. Seit über 20 Jahren für Ihre Gesundheit.</p>
+        </div>
+        <div>
+          <h4>Praxis</h4>
+          <div class="footer-links">
+            <a href="index.html">Startseite</a>
+            <a href="kardiologie.html">Kardiologie</a>
+            <a href="rheumatologie.html">Rheumatologie</a>
+            <a href="team.html">Unser Team</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <h4>Leistungen</h4>
+          <div class="footer-links">
+            <a href="kardiologie.html">Herz-Diagnostik</a>
+            <a href="kardiologie.html">Herzkatheter</a>
+            <a href="rheumatologie.html">Rheuma-Therapie</a>
+            <a href="rheumatologie.html">Früh-Arthritis</a>
+          </div>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer-links">
+            <a href="tel:085151511">0851 51511</a>
+            <a href="mailto:praxis@goettl-adjan.de">praxis@goettl-adjan.de</a>
+            <a>Passau, Niederbayern</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Gemeinschaftspraxis Dr. med. Adjan & dr. med. Göttl</span>
+        <div>
+          <a href="#">Impressum</a> &middot; <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
