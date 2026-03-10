@@ -44,4 +44,4 @@ http.createServer((req, res) => {
     });
     fs.createReadStream(p).pipe(res);
   }
-}).listen(3032, () => console.log('Server running on http://localhost:3032'));
+}).listen(process.env.PORT || 3032, () => console.log('Server running on port ' + (process.env.PORT || 3032)));
