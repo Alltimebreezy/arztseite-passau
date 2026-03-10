@@ -82,7 +82,7 @@
     </div>
   </section>
 
-  <!-- Heart Diagram -->
+  <!-- Heart Diagram — Interactive -->
   <section id="leistungen" class="heart-diagram-section">
     <div class="container">
       <div class="heart-diagram-header reveal">
@@ -90,110 +90,76 @@
         <h2 style="margin-top: 1.5rem;">Unser kardiologisches Spektrum</h2>
       </div>
 
-      <div class="heart-diagram">
+      <div class="heart-diagram heart-diagram--interactive">
         <!-- Left Services -->
         <div class="heart-services heart-services--left">
-          <div class="heart-service-item reveal" data-line="top-left">
+          <div class="heart-service-item reveal" data-rx="-5" data-ry="15">
             <div class="heart-service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </div>
             <h4>Diagnostik</h4>
-            <ul>
-              <li>Ruhe- & Belastungs-EKG</li>
-              <li>Echokardiographie</li>
-              <li>Stressechokardiographie</li>
-              <li>Langzeit-EKG</li>
-              <li>Langzeit-Blutdruckmessung</li>
-              <li>Cardio-CT mit Risikoscreening</li>
-            </ul>
+            <div class="service-copy">
+              <div class="service-copy-inner">
+                <p>Wir hören Ihrem Herzen zu. Ruhe-EKG, Belastungs-EKG und Echokardiographie zeigen uns, was andere übersehen.</p>
+              </div>
+            </div>
           </div>
-          <div class="heart-service-item reveal" data-line="bottom-left">
+          <div class="heart-service-item reveal" data-rx="8" data-ry="12">
             <div class="heart-service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
             </div>
             <h4>Gefäßdiagnostik</h4>
-            <ul>
-              <li>Carotisdoppleruntersuchung</li>
-              <li>Ankle-Brachial-Index</li>
-              <li>Gefäßstatuserhebung</li>
-            </ul>
+            <div class="service-copy">
+              <div class="service-copy-inner">
+                <p>Jedes Gefäß erzählt eine Geschichte. Modernste Doppler-Technologie macht sie sichtbar — millimetergenau.</p>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Center Heart -->
         <div class="heart-center reveal">
-          <div class="heart-glow"></div>
-          <img src="images/heart-gold.png" alt="Anatomisches Herz" class="heart-image">
-          <!-- SVG Connection Lines -->
-          <svg class="heart-lines" viewBox="0 0 400 600" preserveAspectRatio="none">
-            <line x1="0" y1="120" x2="120" y2="200" class="heart-line" />
-            <line x1="0" y1="420" x2="120" y2="380" class="heart-line" />
-            <line x1="400" y1="120" x2="280" y2="200" class="heart-line" />
-            <line x1="400" y1="420" x2="280" y2="380" class="heart-line" />
-          </svg>
+          <div class="heart-perspective">
+            <div class="heart-glow"></div>
+            <img src="images/heart-gold.png" alt="Anatomisches Herz" class="heart-image">
+          </div>
         </div>
 
         <!-- Right Services -->
         <div class="heart-services heart-services--right">
-          <div class="heart-service-item reveal" data-line="top-right">
+          <div class="heart-service-item reveal" data-rx="-5" data-ry="-15">
             <div class="heart-service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
             <h4>Therapie & Eingriffe</h4>
-            <ul>
-              <li>Herzkatheter-Untersuchungen</li>
-              <li>Operative Eingriffe mit Nachsorge</li>
-              <li>Herzschrittmacher-Kontrolle</li>
-              <li>Kardiovaskuläre Risikostratifizierung</li>
-            </ul>
+            <div class="service-copy">
+              <div class="service-copy-inner">
+                <p>Vom Herzschrittmacher bis zum Katheter. In enger Kooperation mit dem Klinikum Passau behandeln wir dort, wo Präzision zählt.</p>
+              </div>
+            </div>
           </div>
-          <div class="heart-service-item reveal" data-line="bottom-right">
+          <div class="heart-service-item reveal" data-rx="8" data-ry="-12">
             <div class="heart-service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h4>Prävention & Labor</h4>
-            <ul>
-              <li>Präventionsberatung</li>
-              <li>Labordiagnostik</li>
-              <li>Individuelle Vorsorge</li>
-            </ul>
+            <h4>Prävention</h4>
+            <div class="service-copy">
+              <div class="service-copy-inner">
+                <p>Der beste Eingriff ist der, den man nicht braucht. Individuelle Vorsorge, bevor es Symptome gibt.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Facts & Figures -->
-  <section class="facts-section">
-    <div class="container">
-      <div class="facts-header reveal">
-        <span class="label">Unsere Praxis in Zahlen</span>
-        <h2>Erfahrung, die zählt</h2>
-      </div>
-      <div class="facts-grid reveal">
-        <div class="fact-item">
-          <span class="fact-number" data-target="20">0</span>
-          <span class="fact-suffix">+</span>
-          <span class="fact-unit">Jahre</span>
-          <span class="fact-label">Kardiologische Erfahrung</span>
-        </div>
-        <div class="fact-item">
-          <span class="fact-number" data-target="6">0</span>
-          <span class="fact-suffix"></span>
-          <span class="fact-unit">Verfahren</span>
-          <span class="fact-label">Diagnostische Methoden</span>
-        </div>
-        <div class="fact-item">
-          <span class="fact-number" data-target="100">0</span>
-          <span class="fact-suffix">%</span>
-          <span class="fact-unit">Anspruch</span>
-          <span class="fact-label">Modernste Technologie</span>
-        </div>
-        <div class="fact-item">
-          <span class="fact-number" data-target="1">0</span>
-          <span class="fact-suffix"></span>
-          <span class="fact-unit">Kooperation</span>
-          <span class="fact-label">Klinikum Passau – Herzkatheter</span>
+          <div class="heart-service-item reveal" data-rx="0" data-ry="-8">
+            <div class="heart-service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4>Bildgebung</h4>
+            <div class="service-copy">
+              <div class="service-copy-inner">
+                <p>Cardio-CT, Stressecho, Langzeit-Monitoring — Technologie, die uns Gewissheit gibt. Und Ihnen Sicherheit.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

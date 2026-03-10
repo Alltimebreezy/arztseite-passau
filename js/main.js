@@ -177,4 +177,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
 
   factNumbers.forEach(el => factObserver.observe(el));
+
+  // --- Interactive Heart Diagram: Hover/Touch → rotate heart + expand copy ---
+  const heartImage = document.querySelector('.heart-image');
+  const serviceItems = document.querySelectorAll('.heart-service-item[data-rx]');
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+  if (heartImage && serviceItems.length) {
+    serviceItems.forEach(item => {
+      const rx = item.getAttribute('data-rx') || 0;
+      const ry = item.getAttribute('data-ry') || 0;
+
+      if (isTouchDevice) {
+        // Mobile: toggle on tap
+        item.addEventListener('click', (e) => {
+          const wasExpanded = item.classList.contains('expanded');
+          // Close all others
+          serviceItems.forEach(s => s.classList.remove('expanded'));
+          heartImage.classList.remove('rotated');
+          heartImage.style.transform = '';
+
+          if (!wasExpanded) {
+            item.classList.add('expanded');
+            heartImage.classList.add('rotated');
+            heartImage.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) scale(1.05)`;
+          }
+        });
+      } else {
+        // Desktop: hover
+        item.addEventListener('mouseenter', () => {
+          // Close any other expanded items
+          serviceItems.forEach(s => {
+            if (s !== item) s.classList.remove('expanded');
+          });
+          item.classList.add('expanded');
+          heartImage.classList.add('rotated');
+          heartImage.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) scale(1.05)`;
+        });
+
+        item.addEventListener('mouseleave', () => {
+          item.classList.remove('expanded');
+          heartImage.classList.remove('rotated');
+          heartImage.style.transform = '';
+        });
+      }
+    });
+  }
 });
